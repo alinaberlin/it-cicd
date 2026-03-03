@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CI/CD Demo – Static Site</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <h1>CI/CD Demo</h1>
+    <p class="tagline">Session 8 – Introduction to CI/CD in AWS</p>
+    <p class="intro">This site is delivered automatically from GitHub to S3 via CodePipeline. On each push, the pipeline runs and the content updates.</p>
+  </header>
+  <main>
+    <section class="updates" aria-label="Latest updates">
+      <h2>Latest updates</h2>
+      <p class="updates-intro">Changes from the repo appear here after the pipeline deploys. With each commit you can add a new block (e.g. a paragraph, a box, buttons) to see the change after refresh.</p>
+      <div class="update-list">
+
+        <div class="update-item">
+          <span class="update-badge">v1</span>
+          <p>Initial deploy – site live from GitHub to S3.</p>
+        </div>
+
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <p>Deployed via AWS CodePipeline · Static website on S3</p>
+  </footer>
+</body>
+</html>
